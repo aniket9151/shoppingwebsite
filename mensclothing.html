@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Clothing</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Additional styles for star logo and text */
+    #navbar__logo {
+      display: flex;
+      align-items: center;
+      color: #6a0dad; /* Purple color for text and star */
+    }
+
+    #navbar__logo .fa-star {
+      color: #6a0dad; /* Purple color for star icon */
+      margin-right: 8px; /* Space between star and text */
+    }
+
+    #navbar__logo span {
+      color: #6a0dad; /* Purple color for text */
+    }
+
+    /* Additional styles for product details page */
+    .product-details {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product-details h1 {
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+
+    .product-details p {
+      font-size: 1.2rem;
+      color: #ffa500;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .product-grid .product-item {
+      text-align: center;
+      width: calc(25% - 20px); /* 4 items per row with gap */
+      box-sizing: border-box;
+    }
+
+    .product-grid .product-item img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .product-grid .product-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .product-grid .product-item h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #d3d3d3; /* Light grey color */
+    }
+
+    .product-grid .product-item p {
+      font-size: 1rem;
+      color: #d3d3d3; /* Light grey color */
+    }
+
+    .buy-now {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ffa500;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-now:hover {
+      background-color: #ff8c00;
+    }
+
+    @media (max-width: 768px) {
+      .product-grid .product-item {
+        width: calc(50% - 20px); /* 2 items per row on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-grid .product-item {
+        width: 100%; /* 1 item per row on very small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div id="navbar__logo">
+      <i class="fas fa-star"></i> <span>SHOPPING SPACE</span> <!-- Star logo and text -->
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__links">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="womensclothing.html" class="navbar__links">Women</a>
+      </li>
+      <!-- Add more navigation items if needed -->
+    </ul>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Product Grid -->
+  <section class="product-details">
+    <h1>Men's Clothing</h1>
+    <div class="product-grid">
+      <!-- Top Row -->
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/9zLG8gZ.jpeg" alt="Uspolo T-shirt">
+          <h3>Uspolo T-shirt</h3>
+          <p>$29.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/WdEwpk0.jpeg" alt="Uspolo T-shirt All Black">
+          <h3>Uspolo T-shirt All Black</h3>
+          <p>$39.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/19c5mcJ.jpeg" alt="Saphire Shirt">
+          <h3>Saphire Shirt</h3>
+          <p>$49.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/7cgrhQV.jpeg" alt="Jack & Jones t-shirt and Pant">
+          <h3>Jack & Jones t-shirt and Pant</h3>
+          <p>$59.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+      <!-- Bottom Row -->
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/nxvOe9f.jpeg" alt="Zara Shirt White">
+          <h3>Zara Shirt White</h3>
+          <p>$69.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/eNMPV99.jpeg" alt="Jack & Jones Pack of 2">
+          <h3>Jack & Jones Pack of 2</h3>
+          <p>$79.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/s9WSz0P.jpeg" alt="H&M Hoodie All black">
+          <h3>H&M Hoodie All black</h3>
+          <p>$89.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+      <div class="product-item">
+        <a href="#">
+          <img src="https://i.imgur.com/wFymxcg.jpeg" alt="Raymond's Blazer">
+          <h3>Raymond's Blazer</h3>
+          <p>$99.99</p>
+        </a>
+        <a href="payment.html" class="buy-now">Buy Now</a> <!-- Added Buy Now button -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Connect with us on social media</p>
+    <div class="social__media">
+      <a href="#" class="social__media-link"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="#" class="social__media-link"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#" class="social__media-link"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Additional Info Section -->
+  <section class="info">
+    <div class="info__content">
+      <p>&copy; 2024 ShoppingSpace Inc. All rights reserved.</p>
+      <p>Contact us: info@shoppingspace.com | Phone: 9819095742</p>
+      <p> Shopping Avenue, Fashion City, India</p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#navbar__logo {
+  color: #4b0082;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+}
+
+#navbar__logo i {
+  margin-right: 8px;
+  color: #4b0082;
+  font-size: 1.8rem;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__item {
+  margin-left: 20px;
+}
+
+.navbar__links {
+  color: white;
+}
+
+.navbar__links:hover {
+  color: #ffa500;
+}
+
+/* Search Bar Styling */
+.navbar__search {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 80px;
+}
+
+.navbar__search input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #4b0082;
+  outline: none;
+  background-color: #121212;
+  color: white;
+}
+
+.navbar__search button {
+  background-color: #4b0082;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.navbar__search button i {
+  color: white;
+}
+
+.navbar__search button:hover {
+  background-color: #6e009e;
+}
+
+.navbar__toggle {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  background-image: url('https://i.imgur.com/yAilVGO.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero__content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Product Display */
+.product__display {
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.product__display h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product__grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product__item {
+  text-align: center;
+  margin: 20px;
+}
+
+.product__item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product__item h3 {
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 20px;
+}
+
+.social__media {
+  margin-top: 10px;
+}
+
+.social__media-link {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.social__media-link i {
+  margin-right: 8px;
+}
+
+.social__media-link:hover {
+  color: #ffa500;
+}
+
+/* Additional Info Section (Now matches footer background) */
+.info {
+  background-color: #121212; /* Matches footer background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.info__content p {
+  margin: 5px 0;
+  color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar__menu {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar__menu.show {
+    display: flex;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .hero__content h2 {
+    font-size: 1.2rem;
+  }
+
+  .product__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product__item img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar__menu.show {
+    display: flex;
+  }
+
+  .hero__content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero__content h2 {
+    font-size: 1rem;
+  }
+
+  .product__item img {
+    width: 120px;
+    height: 120px;
+  }
+}

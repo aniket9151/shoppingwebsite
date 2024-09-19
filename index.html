@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Space</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+  <style>
+    /* Additional styles for star logo and text */
+    #navbar__logo {
+      display: flex;
+      align-items: center;
+      color: #4b0082; /* Dark Purple for text and star */
+    }
+
+    #navbar__logo .fa-star {
+      color: #4b0082; /* Dark Purple for star icon */
+      margin-right: 8px; /* Space between star and text */
+    }
+
+    #navbar__logo span {
+      color: #4b0082; /* Dark Purple for text */
+    }
+
+    /* Profile logo */
+    .profile__logo {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile__logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div id="navbar__logo">
+      <i class="fas fa-star"></i> <span>SHOPPINGSPACE</span>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="mensclothing.html" class="navbar__links">Men</a>
+      </li>
+      <li class="navbar__item">
+        <a href="womensclothing.html" class="navbar__links">Women</a>
+      </li>
+      <li class="navbar__item">
+        <a href="mobilephones.html" class="navbar__links">Phones</a>
+      </li>
+      <li class="navbar__item">
+        <a href="electronics.html" class="navbar__links">Electronics</a>
+      </li>
+    </ul>
+
+    <!-- Search Bar -->
+    <div class="navbar__search">
+      <input type="text" placeholder="Search...">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Profile Logo -->
+    <div class="profile__logo">
+      <img src="https://i.imgur.com/3G3w39H.png" alt="Profile Logo">
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__overlay"></div> <!-- Added overlay for readability -->
+    <div class="hero__content">
+      <h1>SHOPPING SPACE</h1>
+      <h2>Specialized for Electronics and Clothings</h2>
+    </div>
+  </section>
+
+  <!-- Product Display -->
+  <section class="product__display">
+    <h2>Featured Products</h2>
+    <div class="product__grid">
+      <!-- Men's Clothing with Image -->
+      <div class="product__item">
+        <a href="mensclothing.html">
+          <img src="https://i.imgur.com/LGUL2TK.jpeg" alt="Men's Clothing">
+          <h3>Men's Clothing</h3>
+        </a>
+      </div>
+
+      <!-- Women's Clothing with Image -->
+      <div class="product__item">
+        <a href="womensclothing.html">
+          <img src="https://i.imgur.com/Nh3nQGp.jpeg" alt="Women's Clothing">
+          <h3>Women's Clothing</h3>
+        </a>
+      </div>
+
+      <!-- Mobile Phones with New Image -->
+      <div class="product__item">
+        <a href="mobilephones.html">
+          <img src="https://i.imgur.com/3Iw5VwG.jpeg" alt="Mobile Phones">
+          <h3>Mobile Phones</h3>
+        </a>
+      </div>
+
+      <!-- Electronics with New Image -->
+      <div class="product__item">
+        <a href="electronics.html">
+          <img src="https://i.imgur.com/Dyc3scq.jpeg" alt="Electronics">
+          <h3>Electronics</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+  <footer class="footer">
+    <p>Connect with us on social media</p>
+    <div class="social__media">
+      <a href="#" class="social__media-link"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="#" class="social__media-link"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#" class="social__media-link"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Additional Info Section -->
+  <section class="info">
+    <div class="info__content">
+      <p>&copy; 2024 ShoppingSpace Inc. All rights reserved.</p>
+      <p>Contact us: info@shoppingspace.com | Phone: 9819095742</p>
+      <p> Shopping Avenue, Fashion City, India</p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
